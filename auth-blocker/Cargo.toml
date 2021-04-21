@@ -1,0 +1,19 @@
+[package]
+name = "auth-blocker"
+version = "0.1.0"
+authors = ["RussianJeb"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+lru_time_cache = "0.11"
+
+[dependencies.launcher_extension_api]
+git = "https://github.com/team-ns/launcher"
+branch = "experimental"
+
+[lib]
+crate-type = ["cdylib"]
