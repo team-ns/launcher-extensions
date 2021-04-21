@@ -306,7 +306,7 @@ pub fn generate_profile(
             version: version.to_string(),
             libraries: Vec::from_iter(profile_lib_paths),
             class_path: classpath,
-            main_class,
+            main_class: main_class.replace(".", "/"),
             update_verify: vec![],
             update_exclusion: vec![],
             jvm_args: vec![],
