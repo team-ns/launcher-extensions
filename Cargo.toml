@@ -1,5 +1,6 @@
 [workspace]
 members = [
     "profile-generator",
-    "auth-blocker"
+    "auth-blocker",
+    "authlib-patcher"
 ]

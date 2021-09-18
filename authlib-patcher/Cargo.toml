@@ -1,0 +1,17 @@
+[package]
+name = "authlib-patcher"
+version = "0.1.0"
+authors = ["RussianJeb"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dlopen = "0.1"
+
+[dependencies.launcher_extension_api]
+git = "https://github.com/team-ns/launcher"
+branch = "experimental"
+
+[lib]
+crate-type = ["cdylib"]
